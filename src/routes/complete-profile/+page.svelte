@@ -38,11 +38,11 @@
       status: "active",
     });
 
-    onMount(async () => {
-    const user = await getCurrentUser();
-    userStore.set(user);
-    await refreshGoogleToken();
-  });
+  //   onMount(async () => {
+  //   const user = await getCurrentUser();
+  //   userStore.set(user);
+  //   await refreshGoogleToken();
+  // });
 
 
 
