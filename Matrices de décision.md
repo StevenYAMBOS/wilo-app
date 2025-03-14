@@ -2,22 +2,22 @@
 
 ## Sommaire
 
-- [Introduction](#introduction)
-- [I - Langages Front-End](#i---langages-front-end)
-- [II - Langages Back-End](#ii---langages-back-end)
-- [III - Frameworks Front-End](#iii---frameworks-front-end)
-- [IV - Frameworks Back-End](#iv---frameworks-back-end)
-- [V - Bases de données](#v---bases-de-donnees)
-- [VI - Hébergements Cloud Front-End](#vi---hebergements-cloud-front-end)
-- [VII - Hébergements Cloud Back-End](#vii---hebergements-cloud-back-end)
-- [VIII - Choix final](#viii---choix-final)
-  - [Langage Front-End](#langage-front-end)
-  - [Framework Front-End](#framework-front-end)
-  - [Langage Back-End](#langage-back-end)
-  - [Framework Back-End](#framework-back-end)
-  - [Base de données](#base-de-donnees)
-  - [Hébergement Cloud Front-End](#hebergement-cloud-front-end)
-  - [Hébergement Cloud Back-End](#hebergement-cloud-back-end)
+- [Introduction](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#introduction)
+- [I - Langages Front-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#i---langages-front-end)
+- [II - Langages Back-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#ii---langages-back-end)
+- [III - Frameworks Front-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#iii---frameworks-front-end)
+- [IV - Frameworks Back-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#iv---frameworks-back-end)
+- [V - Bases de données](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#v---bases-de-donnees)
+- [VI - Hébergements Cloud Front-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#vi---hebergements-cloud-front-end)
+- [VII - Hébergements Cloud Back-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#vii---hebergements-cloud-back-end)
+- [VIII - Choix final](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#viii---choix-final)
+    - [Langage Front-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#langage-front-end)
+    - [Framework Front-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#framework-front-end)
+    - [Langage Back-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#langage-back-end)
+    - [Framework Back-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#framework-back-end)
+    - [Base de données](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#base-de-donnees)
+    - [Hébergement Cloud Front-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#hebergement-cloud-front-end)
+    - [Hébergement Cloud Back-End](https://chatgpt.com/c/67d32ebc-1050-8008-95f7-dcc81bf31e87#hebergement-cloud-back-end)
 
 ## Introduction
 
@@ -282,74 +282,48 @@ Sa simplicité et son absence de surcharge permettent un développement rapide e
 - **Performances** : Code compilé optimisé, sans surcharge inutile.
 - **Flexibilité** : Possibilité de générer des **PWA** pour un déploiement mobile simplifié.
 
-### Langage Back-End
+### Frameworks Back-End
 
-![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
+![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
 
-Le choix du langage **Back-End** s'est porté sur **Golang**, reconnu pour ses **performances élevées**, sa **simplicité** et sa **scalabilité**. Développé par Google, Go est conçu pour offrir une exécution rapide et efficace, tout en minimisant la consommation de ressources.
+SvelteKit est un framework moderne et performant basé sur **Svelte**, conçu pour optimiser le développement des applications web. Contrairement aux frameworks traditionnels comme React ou Vue, SvelteKit **compile le code en JavaScript pur** au moment du build, ce qui réduit la taille du bundle et améliore les performances.
 
-Sa gestion native de la concurrence grâce aux **goroutines** en fait une option privilégiée pour des applications nécessitant **une forte réactivité**, comme un projet e-sport. Il est particulièrement adapté aux **architectures microservices** et aux **applications distribuées**.
+Justifications :
 
-<u>Justifications :</u>
+- **Performance optimisée** : Pas de DOM virtuel, tout est compilé en JavaScript pur.
+- **Développement rapide** : Syntaxe intuitive et intégration fluide avec TypeScript.
+- **Full-stack léger** : Prend en charge le SSR (Server-Side Rendering) et le SSG (Static Site Generation).
+- **Flexibilité et simplicité** : Idéal pour le **MVP** grâce à une structure minimaliste et efficace.
+- **Écosystème en croissance** : Support natif pour **Vercel, Netlify et Firebase**.
 
-- **Idéal pour les prototypes** : Développement rapide sans surcharge inutile.
-- **Performance et scalabilité** : Gestion concurrentielle efficace, idéal pour les applications temps réel.
-- **Interopérabilité cloud** : Facile à conteneuriser avec **Docker** et déployable sur **Kubernetes, AWS, GCP, OVHcloud**.
-- **Sécurité et robustesse** : Gestion stricte des erreurs, typage fort et exécution compilée.
+## Bases de données
 
-### Framework Back-End
+### Firebase Firestore
 
-![Gin](https://img.shields.io/badge/gin-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 
-Le choix du framework **Gin** s’impose naturellement en complément de **Golang**. Gin est un framework HTTP rapide et léger, idéal pour la création d’API performantes. Son architecture repose sur une gestion optimisée des requêtes HTTP, garantissant un traitement rapide des données.
+Firebase Firestore est une **base de données NoSQL** orientée **documents** qui simplifie la gestion des données dans les applications web et mobiles. Son intégration fluide avec Firebase Authentication et Google Cloud en fait une solution **clés en main** pour un projet rapide à développer et à déployer.
 
-Avec une prise en charge native des **middlewares**, un **routage performant**, et une **gestion des erreurs simplifiée**, Gin permet de construire une **API REST robuste** en un temps réduit, tout en assurant une maintenance facile.
+Justifications :
 
-<u>Justifications :</u>
+- **Temps réel** : Mise à jour instantanée des données dans l’interface utilisateur.
+- **Scalabilité** : Conçu pour gérer de grands volumes de requêtes sans complexité.
+- **Sécurité** : Intégration facile avec Firebase Authentication et règles de sécurité granulaires.
+- **Mode hors-ligne** : Fonctionnalité native pour assurer la persistance des données.
+- **Optimisé pour le MVP** : Permet un **développement rapide** sans se soucier de la configuration serveur.
 
-- **Ultra-performant** : Faible latence et haute capacité de traitement.
-- **Minimaliste mais extensible** : Offre un socle léger avec des fonctionnalités modulables.
-- **Adapté aux microservices** : Intégration fluide avec des solutions cloud-native.
+### Hébergements Cloud Back-End
 
-### Base de données
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+Google Cloud Platform est un ensemble de **services cloud** offrant une **infrastructure performante, sécurisée et évolutive**. Il permet d’héberger des applications back-end, de stocker des données et de gérer l’authentification via Firebase.
 
-La base de données choisie est **MongoDB**, reconnue pour sa flexibilité et son adaptabilité aux **données non structurées**. Grâce à son modèle orienté **documents (JSON-like)**, elle permet une gestion fluide des données dynamiques, idéale pour un projet e-sport où les structures de données peuvent évoluer.
+Justifications :
 
-MongoDB facilite également la **scalabilité horizontale**, assurant une gestion efficace des montées en charge lorsque l’application grandit. Elle est optimisée pour le **stockage des objets complexes**, comme les **profils de joueurs**, les **statistiques de performance**, ou les **roadmaps personnalisées**.
+- **Infrastructure robuste** : Hautes performances, sécurité et résilience des services.
+- **Évolutivité** : Gestion simplifiée des montées en charge avec Google Cloud Run.
+- **Sécurité avancée** : Sécurisation des données via IAM et règles de pare-feu.
+- **Optimisé pour Firebase** : Permet une intégration fluide avec Firestore et les APIs Google.
+- **Solution complète pour un MVP** : Rapidité de mise en place et coûts réduits pour le développement initial.
 
-<u>Justifications :</u>
-
-- **Flexibilité** : Modèle documenté dynamique, adapté aux applications évolutives.
-- **Simplicité** : Facilité d’utilisation et d’intégration avec **Golang**.
-- **Performance** : Optimisé pour le traitement rapide de requêtes complexes.
-- **Scalabilité horizontale** : Peut gérer un grand volume de données sans perte de performance.
-
-### Hébergement Cloud Front-End
-
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-
-Pour l’hébergement du **Front-End**, **Vercel** est le choix privilégié. Conçu pour offrir une **expérience fluide aux développeurs**, Vercel permet un déploiement en **quelques secondes** avec un support natif des frameworks modernes, notamment **Svelte**.
-
-Son infrastructure optimisée et sa mise en cache avancée garantissent une **latence minimale**, idéale pour un projet nécessitant **des temps de réponse rapides**.
-
-<u>Justifications :</u>
-
-- **Déploiement rapide et automatisé** : Intégration directe avec Git.
-- **Performance** : Optimisé pour les applications web modernes.
-- **Scalabilité automatique** : Gère les pics de trafic sans intervention manuelle.
-
-### Hébergement Cloud Back-End
-
-![Railway](https://img.shields.io/badge/railway-%23005990.svg?style=for-the-badge&logo=railway&logoColor=white)
-
-L’hébergement du **Back-End** repose sur **Railway**, une plateforme qui permet de **déployer rapidement des applications serveur** sans gestion complexe d’infrastructure. Railway offre une **expérience simplifiée** et une **scalabilité immédiate**, adaptée aux besoins d’un projet en phase MVP.
-
-Avec un support natif de **Docker** et une intégration fluide avec **MongoDB**, Railway garantit une mise en production rapide, sécurisée et optimisée.
-
-<u>Justifications :</u>
-
-- **Déploiement sans effort** : Configuration minimale, mise en production immédiate.
-- **Adapté aux microservices** : Idéal pour une architecture modulaire.
-- **Optimisé pour Golang et MongoDB** : Support natif des bases de données et des conteneurs.
+Avec ces choix technologiques, Wilo bénéficie d'une **architecture flexible et performante**, parfaitement adaptée au développement d'un **MVP rapide et scalable**.
