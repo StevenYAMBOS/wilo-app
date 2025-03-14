@@ -1,12 +1,19 @@
 <!-- src/routes/dashboard/+page.svelte -->
 
 <script lang="ts">
-  import { userStore, logout, type UserData } from "../../lib/firebase";
+  import { userStore, logout, type UserData, getCurrentUser, refreshGoogleToken } from "../../lib/firebase";
   import { goto } from "$app/navigation";
   import Calendar from "$lib/components/Calendar.svelte";
   // import { onMount } from "svelte";
   import ChatBot from "$lib/components/ChatBot.svelte";
   import Menu from "$lib/components/Menu.svelte";
+  import { onMount } from "svelte";
+
+  onMount(async () => {
+    const user = await getCurrentUser();
+    userStore.set(user);
+    await refreshGoogleToken();
+  });
 
   let user: UserData | null = $userStore;
 
@@ -38,6 +45,8 @@
   // }
 
   // onMount(fetchProposal);
+
+
 </script>
 
 <main class="flex flex-col lg:flex-row min-h-screen">

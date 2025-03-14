@@ -1,10 +1,9 @@
 // src/lib/openai.ts
 
 import { OpenAI } from "openai";
-// import { OPENAI_API_KEY } from "$env/static/private";
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 export async function generateActivityProposal(events: any[], location?: string) {

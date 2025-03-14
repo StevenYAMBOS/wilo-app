@@ -1,8 +1,9 @@
 <script lang="ts">
-  import { db, userStore, type UserData } from "../../lib/firebase";
+  import { db, getCurrentUser, refreshGoogleToken, userStore, type UserData } from "../../lib/firebase";
   import { collection, doc, setDoc, updateDoc } from "firebase/firestore";
   import { goto } from "$app/navigation";
   import { get } from "svelte/store";
+  import { onMount } from "svelte";
 
   let user: UserData | null = get(userStore);
   // let user: UserData | null = $userStore;
@@ -36,6 +37,14 @@
       Company: companyRef.id,
       status: "active",
     });
+
+    onMount(async () => {
+    const user = await getCurrentUser();
+    userStore.set(user);
+    await refreshGoogleToken();
+  });
+
+
 
     goto("/dashboard");
   }
