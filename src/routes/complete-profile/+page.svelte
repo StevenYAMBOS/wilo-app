@@ -97,7 +97,7 @@
 
       <!-- Numéro SIRET -->
       <div>
-        <label class="text-gray-700 font-medium">Numéro SIRET</label>
+        <label class="text-gray-700 font-medium">N° SIRET</label>
         <input
           type="text"
           bind:value={companySiret}
