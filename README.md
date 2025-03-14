@@ -1,6 +1,6 @@
 # Wilo App
 
-Dépôt Front-End de l'application Wilo.
+Dépôt de l'application Wilo.
 
 ## Technologies utilisées
 
@@ -37,7 +37,6 @@ npm run dev
 
 ## Liens utiles
 
-- [Dépôt Back-End](https://github.com/StevenYAMBOS/wilo-api)
 - [Documentation du projet](./documentation/documentation.md)
 - [Site internet](#)
 
