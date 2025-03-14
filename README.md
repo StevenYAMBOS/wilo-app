@@ -17,6 +17,8 @@ Avec Wilo, **l’activité physique s’intègre naturellement** à ton quotidie
 - ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 - ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
 - ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+- ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+- ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
 
 ## Organisation du dépôt ⚠️
 
@@ -65,15 +67,20 @@ API_URL=  # Lien vers l'API (Back-End)
 ### Lancement
 
 ```bash
-npm install
-npm run dev
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+VITE_FIREBASE_MEASUREMENT_ID=
+OPENAI_API_KEY=
 ```
 
 ## Liens utiles
 
-- [Dépôt Back-End](https://github.com/StevenYAMBOS/wilo-api)
 - [Documentation du projet](./documentation/documentation.md)
-- [Site internet](#)
+- [Site internet](https://wilo-app.vercel.app/)
 
 ## Auteur
 
